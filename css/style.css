@@ -1,0 +1,234 @@
+/* font import */
+@import url("https://fonts.googleapis.com/css2?family=Merriweather:wght@400;700&family=Montserrat:wght@400;500;700&family=Sacramento&display=swap");
+
+/* ------------------------------------------------------------ */
+/* global container */
+
+body {
+  color: #40514e;
+  margin: 0;
+  text-align: center;
+  font-family: "Merriweather", serif;
+}
+
+h1 {
+  color: #66bfbf;
+  font-size: 5.625rem;
+  margin: 50px auto 0 auto;
+  font-family: "Sacramento", cursive;
+}
+
+h2 {
+  color: #66bfbf;
+  font-family: "Montserrat", sans-serif;
+  font-size: 2.5rem;
+  /* n = 40px =40px/16px = 2.5em = 250% */
+  font-weight: normal;
+  padding-bottom: 10px;
+}
+
+h3 {
+  color: #11999e;
+  font-family: "Montserrat", sans-serif;
+}
+
+p {
+  line-height: 2;
+}
+
+hr {
+  border: dotted #eaf6f6 6px;
+  border-bottom: none;
+  width: 4%;
+  margin: 100px auto;
+}
+
+a {
+  color: #11999e;
+  font-family: "Montserrat", sans-serif;
+  margin: 10px 20px;
+  text-decoration: none;
+}
+
+a:hover {
+  color: #ffffff;
+}
+
+/* ------------------------------------------------------------ */
+/* top container */
+.top-container {
+  background-color: #eaf6f6;
+  position: relative;
+  padding-top: 10px;
+}
+
+.top-awan {
+  position: absolute;
+  right: 300px;
+  top: 40px;
+}
+
+.bottom-awan {
+  position: absolute;
+  left: 250px;
+  bottom: 300px;
+}
+
+/* ------------------------------------------------------------ */
+/* middle container */
+.middle-container {
+  margin: 100px 0;
+}
+
+.text-profile {
+  width: 30%;
+  margin: auto;
+}
+
+.skill-row {
+  width: 50%;
+  margin: 100px auto;
+  text-align: left;
+}
+
+.computer-img {
+  width: 25%;
+  float: left;
+  margin-right: 30px;
+}
+
+.lado-img {
+  width: 25%;
+  float: right;
+  margin-left: 30px;
+}
+
+/* ------------------------------------------------------------ */
+/* bottom container */
+.bottom-container {
+  background-color: #66bfbf;
+  padding: 50px 0 20px;
+}
+
+.pesan-kontak {
+  width: 40%;
+  margin: 40px auto 60px;
+}
+
+.contact-button {
+  background: #11cdd4;
+  background-image: -webkit-linear-gradient(top, #11cdd4, #11999e);
+  background-image: -moz-linear-gradient(top, #11cdd4, #11999e);
+  background-image: -ms-linear-gradient(top, #11cdd4, #11999e);
+  background-image: -o-linear-gradient(top, #11cdd4, #11999e);
+  background-image: linear-gradient(to bottom, #11cdd4, #11999e);
+  -webkit-border-radius: 8;
+  -moz-border-radius: 8;
+  border-radius: 8px;
+  font-family: "Montserrat", sans-serif;
+  color: #ffffff;
+  font-size: 20px;
+  padding: 10px 20px 10px 20px;
+  text-decoration: none;
+}
+
+.contact-button:hover {
+  background: #30e3cb;
+  background-image: -webkit-linear-gradient(top, #30e3cb, #2bc4ad);
+  background-image: -moz-linear-gradient(top, #30e3cb, #2bc4ad);
+  background-image: -ms-linear-gradient(top, #30e3cb, #2bc4ad);
+  background-image: -o-linear-gradient(top, #30e3cb, #2bc4ad);
+  background-image: linear-gradient(to bottom, #30e3cb, #2bc4ad);
+  text-decoration: none;
+}
+
+/* 
+.divbutton {
+  margin: 50px auto;
+}
+
+.button {
+  position: relative;
+  padding: 0.8em 1.2em;
+  border: none;
+  font-family: "Montserrat", Arial, Helvetica, sans-serif;
+  cursor: pointer;
+  background-color: transparent;
+  margin: 0.1em 0.8em;
+}
+
+.button.asuw:after,
+.button.asuw:before {
+  content: "";
+  position: absolute;
+  display: block;
+  width: 20%;
+  height: 20%;
+  border: 3px solid white;
+  transition: all 0.6s ease;
+  border-radius: 2px;
+}
+
+.button.asuw:before {
+  top: 0;
+  left: 0;
+  border-bottom-color: transparent;
+  border-right-color: transparent;
+  border-top-color: #11999e;
+  border-left-color: #11999e;
+}
+
+.button.asuw:after {
+  bottom: 0;
+  right: 0;
+  border-top-color: transparent;
+  border-left-color: transparent;
+  border-bottom-color: #11999e;
+  border-right-color: #11999e;
+}
+
+.button.asuw:hover:after,
+.button.asuw:hover:before {
+  border-bottom-color: #11999e;
+  border-right-color: #11999e;
+  border-top-color: #11999e;
+  border-left-color: #11999e;
+  width: 100%;
+  height: 100%;
+} */
+/* ------------------------------------------------------------ */
+
+/* footer */
+.copyright {
+  color: #eaf6f6;
+  font-size: 0.75rem;
+  padding: 20px 0;
+}
+
+#ke-atas {
+  display: none;
+  cursor: pointer;
+  position: fixed;
+  left: 95%;
+  bottom: 20px;
+  background-color: #41e0e6;
+  border: none;
+  border-radius: 20%;
+  height: 50px;
+  width: 50px;
+  font-size: 15px;
+  box-shadow: 0.5px 1px 10px #6be3e7;
+  color: rgb(243, 232, 232);
+}
+
+#ke-atas:hover {
+  background-color: #58e4e9;
+  color: white;
+  box-shadow: 0.5px 1px 10px #6be3e7;
+}
+
+.imgbro {
+  height: 40px;
+  width: 40px;
+  align-content: center;
+}

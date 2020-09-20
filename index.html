@@ -1,0 +1,130 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <link rel="shortcut icon" href="image/iconss.png" type="image/x-icon" />
+  <link rel="stylesheet" href="css/style.css" />
+  <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+  <title>Rahman Site</title>
+</head>
+
+<body>
+  <div class="top-container">
+    <img class="top-awan" src="image/cloud.png" alt="awan-img" />
+    <h1>Hello Rahman.</h1>
+    <h2>I am <span>Advanced</span> Beginner Developer</h2>
+    <img class="bottom-awan" src="image/cloud.png" alt="awan-img" />
+    <img src="image/mountain.png" alt="gunung-img" />
+  </div>
+
+  <div class="middle-container">
+    <div class="profile">
+      <img src="image/uzaki.png" alt="profile-img" />
+      <h2>Hello.</h2>
+      <p class="text-profile">
+        Lorem ipsum dolor sit amet, vitae volutpat, dui conubia, dolor urna.
+        Non auctor, montes nulla distinctio.
+      </p>
+    </div>
+    <hr />
+
+    <div class="skills">
+      <h2>My Skills.</h2>
+      <div class="skill-row">
+        <img class="computer-img" src="image/computer.png" alt="skill-img" />
+        <h3>Microsoft Office</h3>
+        <!-- class="jing-clear" -->
+        <p>
+          Lorem ipsum dolor sit amet, quis in duis, iaculis id felis.
+          Consectetuer vestibulum, nunc urna lectus, erat ligula. Hendrerit
+          nam, lectus ante, ut lorem eros.
+        </p>
+      </div>
+
+      <div class="skill-row">
+        <img class="lado-img" src="image/chillies.png" alt="skill-row-img" />
+        <h3>HTML Programming</h3>
+        <!--class="jing-clear" -->
+        <p>
+          Lorem ipsum dolor sit amet, mauris sed consectetuer. Etiam et eu,
+          bibendum interdum, lacus quis mauris. Curabitur wisi, quisque vel
+          eu, rutrum nam.
+        </p>
+      </div>
+    </div>
+
+    <hr />
+    <div class="contact-me">
+      <h2>Get In Touch</h2>
+      <h3>ya touch aja kwkwkw
+      </h3>
+      <p class="pesan-kontak">
+        Jika ingin memberitahukan sesuatu silahkan hubungi saya
+      </p>
+      <a class="contact-button" href="mailto:bobbyrahmanda1996@gmail.com">CONTACT ME</a>
+      <!-- <div class="divbutton">
+        <a class="button asuw" href="mailto:bobbyrahmanda1996@gmail.com">CONTACT ME</a>
+      </div> -->
+    </div>
+  </div>
+
+  <div class="bottom-container">
+    <a class="footer-link" href="https://www.linkedin.com/">LinkedIn</a>
+    <a class="footer-link" href="https://twitter.com/">Twitter</a>
+    <a class="footer-link" href="https://www.appbrewery.co/">Website</a>
+
+
+    <p class="copyright">© 2020 Bobby Rahmanda.</p>
+    <button id="ke-atas"><img class="imgbro" src="image/arrow.png" alt=""></button>
+
+    <script>
+      // scroll on top using Javascript W3school.com
+      // var buttonbro = document.getElementById("myBtn");
+
+
+      // window.onscroll = function () {
+      //   scrollFunction()
+      // };
+
+      // function scrollFunction() {
+      //   if (document.body.scrollTop > 30 || document.documentElement.scrollTop > 30) {
+      //     buttonbro.style.display = "block";
+      //     buttonbro.style.scrollBehavior = "smooth";
+      //   } else {
+      //     buttonbro.style.display = "none";
+
+      //   }
+      // }
+
+      // function topFunction() {
+      //   document.body.scrollTop = 0;
+      //   document.documentElement.scrollTop = 0;
+      // }
+
+      //scroll on top using Jquery
+
+      $(window).scroll(function () {
+        var jing = $(window).scrollTop();
+        if (jing > 100) {
+          $('#ke-atas').fadeIn();
+        } else {
+          $('#ke-atas').fadeOut();
+        }
+      });
+      $(document).ready(function () {
+        $("#ke-atas").click(function (event) {
+          event.preventDefault();
+          $("html, body").animate({
+            scrollTop: 0
+
+          }, "slow");
+          return false;
+        });
+      });
+    </script>
+</body>
+
+</html>
